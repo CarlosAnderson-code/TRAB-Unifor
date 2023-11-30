@@ -19,15 +19,12 @@ public class carro {
     public void ligarCarro(){
         motor.ligar();
     }
-    
     public double getQuilometratem() {
         return quilometratem;
     }
-
     public void setQuilometratem(int quilometratem) {
         this.quilometratem = quilometratem;
     }
-    
     public void rodar(double quilometrospercorridos){
         if(quilometrospercorridos >= 0){
             quilometratem = quilometratem+quilometrospercorridos;
@@ -65,11 +62,9 @@ public class carro {
         this.modelo = modelo;
         this.ano = ano;
     }
-    
     public void exibirCarroInfo(){
         System.out.println("Marca: "+marca+"\n"
                 +"Modelo: "+modelo+"\n"
                 +"Ano: "+ano);
     }
-    
 }
